@@ -1,25 +1,20 @@
-# themer
+# Purps colorscheme
 
 This is a simple colorscheme I made from a wallpaper that can be found in the repo. Credit to Nikolai Lockertsen for making the wallpaper.
 
 This project was made with [themer.dev](https://themer.dev/)
 The unique project ID is [here](https://themer.dev/?activeColorSet=dark&colors.dark.shade7=%23dedede&colors.dark.shade0=%231f132a&colors.dark.accent0=%23f53054&colors.dark.accent1=%23eca1b4&colors.dark.accent3=%23b03454&colors.dark.accent2=%23b58ddb&colors.dark.accent4=%23312684&colors.dark.accent5=%233f37b3&colors.dark.accent6=%234c2ca4&colors.dark.accent7=%239c7ade&colors.dark.shade6=%23dedede&calculateIntermediaryShades.dark=true).
 
-If you find `themer` useful, here are some ways to support the project:
-
-* Star [`themer` on GitHub](https://github.com/mjswensen/themer)
-* Follow [@themerdev](https://twitter.com/themerdev) on Twitter
-* [Send a tip through the Brave Browser](https://brave.com/the537), either on [the repository page](https://github.com/mjswensen/themer) or [the Web UI](https://themer.dev)
-* Pay what you want when downloading your theme from [themer.dev](https://themer.dev)
+PR's welcome!
 
 # Installation instructions
 
-## Alacritty
+### Alacritty
 
 1. Paste the contents of `Alacritty/Themer.yml` into your Alacritty config file.
 2. Select the desired theme by setting the `colors` config key to reference the scheme's anchor (i.e., `colors: *light` or `colors: *dark`).
 
-## Atom Syntax
+### Atom Syntax
 
 Use the `apm link` command to install the generated theme package to Atom:
 
@@ -27,7 +22,7 @@ Use the `apm link` command to install the generated theme package to Atom:
 
 Then open/reload Atom and select the desired theme in the list of available syntax themes.
 
-## Atom UI
+### Atom UI
 
 Use the `apm link` command to install the generated theme package to Atom:
 
@@ -35,7 +30,7 @@ Use the `apm link` command to install the generated theme package to Atom:
 
 Then open/reload Atom and select the desired theme in the list of available UI themes.
 
-## Brave
+### Brave
 
 1. Launch Brave and go to `brave://extensions`.
 2. Check the "Developer mode" checkbox at the top.
@@ -43,7 +38,7 @@ Then open/reload Atom and select the desired theme in the list of available UI t
 
 (To reset or remove the theme, visit `brave://settings` and click "Reset to Default" in the "Appearance" section.)
 
-## Chrome
+### Chrome
 
 1. Launch Chrome and go to `chrome://extensions`.
 2. Check the "Developer mode" checkbox at the top.
@@ -51,7 +46,7 @@ Then open/reload Atom and select the desired theme in the list of available UI t
 
 (To reset or remove the theme, visit `chrome://settings` and click "Reset to Default" in the "Appearance" section.)
 
-## CMD
+### CMD
 
 Simply double-click the desired theme file to add the color keys to the registry:
 
@@ -59,7 +54,7 @@ Simply double-click the desired theme file to add the color keys to the registry
 
 The scheme of CMD can then be configured with the `color` command. For example, use `color 07` to set the background and foreground to your color set's default.
 
-## ConEmu
+### ConEmu
 
 1. Open the ConEmu settings and navigate to Features > Colors. Take note of the location of `ConEmu.xml` for later.
 2. Create a new color scheme by typing a name in the "Schemes" field and clicking Save.
@@ -68,7 +63,7 @@ The scheme of CMD can then be configured with the `color` command. For example, 
 5. Replace the `<value>` elements `ColorTable00` through `ColorTable31` with the contents of your themer-generated XML (`ConEmu/themer-dark.xml`). Be sure to leave the others, like `ExtendColors`, etc. intact.
 6. Open ConEmu and select your theme again in settings.
 
-## CSS
+### CSS
 
 Import the generated theme file into your stylesheet via `@import()`, or into your HTML markup via `<link>`.
 
@@ -80,7 +75,7 @@ Generated files:
 * `CSS/rgb.css`
 * `CSS/hsl.css`
 
-## Emacs
+### Emacs
 
 Copy (or symlink) the generated theme file into `~/.emacs.d/`:
 
@@ -90,7 +85,7 @@ Then load the desired theme in `init.el`:
 
     (load-theme 'themer-dark t)
 
-## Firefox Add-on
+### Firefox Add-on
 
 To use the generated extension package, the code will need to be packaged up and signed by Mozilla.
 
@@ -104,7 +99,7 @@ Learn more about Firefox themes from [extensionworkshop.com](https://extensionwo
 
 To theme Firefox without the need to create a developer account and go through the extension review process, see themer's integration with [Firefox Color](https://color.firefox.com).
 
-## Firefox Color
+### Firefox Color
 
 The Firefox Color add-on allows for simple theming without the need for a developer account or package review process by Mozilla.
 
@@ -114,7 +109,7 @@ The Firefox Color add-on allows for simple theming without the need for a develo
 
 For a more fully featured Firefox theme, see themer's Firefox theme add-on generator.
 
-## Hyper
+### Hyper
 
 First, copy (or symlink) the outputted package directory to the Hyper local plugins directory:
 
@@ -128,19 +123,19 @@ Then edit `~/.hyper.js` and add the package to the `localPlugins` array:
     ],
     ...
 
-## iTerm
+### iTerm
 
 1. Launch iTerm
 2. Press `command`-`I` to open the iTerm preferences
 3. Choose Colors > Color Presets... > Import... and choose the generated theme file (`iTerm/themer-iterm-dark.itermcolors`)
 
-## kitty
+### kitty
 
 In the kitty configuration file (usually `~/.config/kitty/kitty.conf`), `include` the generated theme file:
 
     include kitty/themer-dark.conf
 
-## Konsole
+### Konsole
 
 Copy (or symlink) the generated files to `~/.local/share/konsole/`:
 
@@ -148,7 +143,7 @@ Copy (or symlink) the generated files to `~/.local/share/konsole/`:
 
 Then choose the desired theme in Konsole > Settings > Edit Current Profile > Appearance.
 
-## Sketch
+### Sketch
 
 Load the generated theme file into Sketch through the [sketch-palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin.
 
@@ -159,7 +154,7 @@ Load the generated theme file into Sketch through the [sketch-palettes](https://
 1. Copy (or symlink) the generated theme files (`Sublime Text/themer-sublime-text-dark.tmTheme`) to the `User/` packages folder (you can see where this folder is located by choosing the "Browse Packages..." menu option in Sublime Text).
 2. Choose the theme from the list of available color themes.
 
-## Terminator
+### Terminator
 
 Copy the contents of `Terminator/themer-terminator-dark.txt` to the Terminator's config file.
 
@@ -169,7 +164,7 @@ You can paste it as a new profile, or copy the contents into your existing profi
 
 Finally, restart Terminator to see the new theme.
 
-## Vim
+### Vim
 
 Copy or symlink `Vim/ThemerVim.vim` to `~/.vim/colors/`.
 
@@ -178,7 +173,7 @@ Then set the colorscheme in `.vimrc`:
     " The background option must be set before running this command.
     colo ThemerVim
 
-## Visual Studio
+### Visual Studio
 
 1. Select Tools > Import and Export Settings...
 2. Choose the "Import selected environment settings" option
@@ -186,7 +181,7 @@ Then set the colorscheme in `.vimrc`:
 4. Click "Browse..." and choose the generated theme file ('Visual Studio/themer-dark.vssettings')
 5. Click "Finish"
 
-## VS Code
+### VScode
 
 Copy (or symlink) the generated package directory into the VS Code extensions directory:
 
@@ -194,7 +189,7 @@ Copy (or symlink) the generated package directory into the VS Code extensions di
 
 Then reload or restart VS Code. The generated theme package should be in the list of installed extensions, and "Themer Dark" will be available in the list of themes.
 
-## Windows Terminal
+### Windows Terminal
 
 1. Open the Windows Terminal settings (`Ctrl`-`,`)
 2. Add the contents of 'Windows Terminal/themer-dark.json' to the `schemes` array in `profile.json`
@@ -206,7 +201,7 @@ Then reload or restart VS Code. The generated theme package should be in the lis
       }
     }
 
-## Xcode
+### Xcode
 
 Copy (or symlink) the generated theme file to Xcode's themes directory:
 
