@@ -1,8 +1,9 @@
-# `themer`
+# themer
 
-Your theme's unique URL:
+This is a simple colorscheme I made from a wallpaper that can be found in the repo. Credit to Nikolai Lockertsen for making the wallpaper.
 
-https://themer.dev/?activeColorSet=dark&colors.dark.shade7=%23dedede&colors.dark.shade0=%231f132a&colors.dark.accent0=%23f53054&colors.dark.accent1=%23eca1b4&colors.dark.accent3=%23b03454&colors.dark.accent2=%23b58ddb&colors.dark.accent4=%23312684&colors.dark.accent5=%233f37b3&colors.dark.accent6=%234c2ca4&colors.dark.accent7=%239c7ade&colors.dark.shade6=%23dedede&calculateIntermediaryShades.dark=true
+This project was made with [themer.dev](https://themer.dev/)
+The unique project ID is [here](https://themer.dev/?activeColorSet=dark&colors.dark.shade7=%23dedede&colors.dark.shade0=%231f132a&colors.dark.accent0=%23f53054&colors.dark.accent1=%23eca1b4&colors.dark.accent3=%23b03454&colors.dark.accent2=%23b58ddb&colors.dark.accent4=%23312684&colors.dark.accent5=%233f37b3&colors.dark.accent6=%234c2ca4&colors.dark.accent7=%239c7ade&colors.dark.shade6=%23dedede&calculateIntermediaryShades.dark=true).
 
 If you find `themer` useful, here are some ways to support the project:
 
