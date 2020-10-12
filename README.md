@@ -5,7 +5,7 @@ This is a simple colorscheme I made from a wallpaper that can be found in the re
 This project was made with [themer.dev](https://themer.dev/)
 The unique project ID is [here](https://themer.dev/?activeColorSet=dark&colors.dark.shade7=%23dedede&colors.dark.shade0=%231f132a&colors.dark.accent0=%23f53054&colors.dark.accent1=%23eca1b4&colors.dark.accent3=%23b03454&colors.dark.accent2=%23b58ddb&colors.dark.accent4=%23312684&colors.dark.accent5=%233f37b3&colors.dark.accent6=%234c2ca4&colors.dark.accent7=%239c7ade&colors.dark.shade6=%23dedede&calculateIntermediaryShades.dark=true).
 
-PR's welcome!
+PR's welcome! I need more programs that themer doesn't cover.
 
 # Installation instructions
 
@@ -18,7 +18,7 @@ PR's welcome!
 
 Use the `apm link` command to install the generated theme package to Atom:
 
-    apm link 'Atom Syntax/themer-dark-syntax'
+    apm link 'Atom Syntax/purps-syntax'
 
 Then open/reload Atom and select the desired theme in the list of available syntax themes.
 
@@ -26,7 +26,7 @@ Then open/reload Atom and select the desired theme in the list of available synt
 
 Use the `apm link` command to install the generated theme package to Atom:
 
-    apm link 'Atom UI/themer-dark-ui'
+    apm link 'Atom UI/purps-ui'
 
 Then open/reload Atom and select the desired theme in the list of available UI themes.
 
@@ -34,7 +34,7 @@ Then open/reload Atom and select the desired theme in the list of available UI t
 
 1. Launch Brave and go to `brave://extensions`.
 2. Check the "Developer mode" checkbox at the top.
-3. Click the "Load unpacked extension..." button and choose the desired theme directory (`Brave/Themer Dark`).
+3. Click the "Load unpacked extension..." button and choose the desired theme directory (`Brave/Purps`).
 
 (To reset or remove the theme, visit `brave://settings` and click "Reset to Default" in the "Appearance" section.)
 
@@ -42,7 +42,7 @@ Then open/reload Atom and select the desired theme in the list of available UI t
 
 1. Launch Chrome and go to `chrome://extensions`.
 2. Check the "Developer mode" checkbox at the top.
-3. Click the "Load unpacked extension..." button and choose the desired theme directory (`Chrome/Themer Dark`).
+3. Click the "Load unpacked extension..." button and choose the desired theme directory (`Chrome/Purps`).
 
 (To reset or remove the theme, visit `chrome://settings` and click "Reset to Default" in the "Appearance" section.)
 
@@ -50,7 +50,7 @@ Then open/reload Atom and select the desired theme in the list of available UI t
 
 Simply double-click the desired theme file to add the color keys to the registry:
 
-* `CMD/themer-dark.reg`
+* `CMD/purps.reg`
 
 The scheme of CMD can then be configured with the `color` command. For example, use `color 07` to set the background and foreground to your color set's default.
 
@@ -76,7 +76,7 @@ Generated files:
 * `CSS/hsl.css`
 
 ### Doom-emacs
-Add the doom-purps-theme.el to your custom theme load directory and in `~/.doom.d/config.el`, add `(require 'doom-themes)` and `(load-theme 'doom-purps t)`
+Add the `doom-purps-theme.el` to your custom theme load directory and in `~/.doom.d/config.el`, add `(require 'doom-themes)` and `(load-theme 'doom-purps t)`
 
 ### Emacs
 
@@ -94,7 +94,7 @@ To use the generated extension package, the code will need to be packaged up and
 
 To package the code in preparation for submission, the `web-ext` tool can be used:
 
-    npx web-ext build --source-dir 'Firefox Add-on/Themer Dark'
+    npx web-ext build --source-dir 'Firefox Add-on/Purps'
 
 Then the package can be submitted to Mozilla for review in the [Add-on Developer Hub](https://addons.mozilla.org/en-US/developers/addon/submit/distribution).
 
@@ -107,7 +107,7 @@ To theme Firefox without the need to create a developer account and go through t
 The Firefox Color add-on allows for simple theming without the need for a developer account or package review process by Mozilla.
 
 1. Install the [Firefox Color add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/).
-2. Open 'Firefox Color/themer-dark.url' directly with Firefox.
+2. Open 'Firefox Color/purps.url' directly with Firefox.
 3. Click "Yep" when prompted to apply the custom theme.
 
 For a more fully featured Firefox theme, see themer's Firefox theme add-on generator.
@@ -116,13 +116,13 @@ For a more fully featured Firefox theme, see themer's Firefox theme add-on gener
 
 First, copy (or symlink) the outputted package directory to the Hyper local plugins directory:
 
-    cp -R 'Hyper/themer-hyper-dark' ~/.hyper_plugins/local/
+    cp -R 'Hyper/purps-hyper-dark' ~/.hyper_plugins/local/
 
 Then edit `~/.hyper.js` and add the package to the `localPlugins` array:
 
     ...
     localPlugins: [
-      'themer-hyper-dark'
+      'purps-hyper-dark'
     ],
     ...
 
@@ -130,19 +130,19 @@ Then edit `~/.hyper.js` and add the package to the `localPlugins` array:
 
 1. Launch iTerm
 2. Press `command`-`I` to open the iTerm preferences
-3. Choose Colors > Color Presets... > Import... and choose the generated theme file (`iTerm/themer-iterm-dark.itermcolors`)
+3. Choose Colors > Color Presets... > Import... and choose the generated theme file (`iTerm/purps-iterm-dark.itermcolors`)
 
 ### kitty
 
 In the kitty configuration file (usually `~/.config/kitty/kitty.conf`), `include` the generated theme file:
 
-    include kitty/themer-dark.conf
+    include kitty/purps.conf
 
 ### Konsole
 
 Copy (or symlink) the generated files to `~/.local/share/konsole/`:
 
-    cp 'Konsole/themer-dark.colorscheme' ~/.local/share/konsole/
+    cp 'Konsole/purps.colorscheme' ~/.local/share/konsole/
 
 Then choose the desired theme in Konsole > Settings > Edit Current Profile > Appearance.
 
@@ -150,7 +150,7 @@ Then choose the desired theme in Konsole > Settings > Edit Current Profile > App
 
 Load the generated theme file into Sketch through the [sketch-palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin.
 
-* `Sketch/themer-sketch-palettes-dark.sketchpalette`
+* `Sketch/purps-sketch-palettes-dark.sketchpalette`
 
 ## Sublime Text
 
@@ -181,14 +181,14 @@ Then set the colorscheme in `.vimrc`:
 1. Select Tools > Import and Export Settings...
 2. Choose the "Import selected environment settings" option
 3. Choose whether or not to save a backup of current settings
-4. Click "Browse..." and choose the generated theme file ('Visual Studio/themer-dark.vssettings')
+4. Click "Browse..." and choose the generated theme file ('Visual Studio/purps.vssettings')
 5. Click "Finish"
 
 ### VScode
 
 Copy (or symlink) the generated package directory into the VS Code extensions directory:
 
-    cp -R 'VS Code/theme-themer-vscode' ~/.vscode/extensions/
+    cp -R 'VS Code/theme-purps' ~/.vscode/extensions/
 
 Then reload or restart VS Code. The generated theme package should be in the list of installed extensions, and "Themer Dark" will be available in the list of themes.
 
@@ -197,13 +197,13 @@ Then reload or restart VS Code. The generated theme package should be in the lis
 1. Open the Windows Terminal settings (`Ctrl`-`,`)
 2. Add the contents of 'Windows Terminal/themer-dark.json' to the `schemes` array in `profile.json`
 3. Set the `colorScheme` property to the desired scheme name ("Themer Dark") in the profiles section of `profile.json`, e.g.:
-
+```
     "profiles": {
       "defaults": {
-        "colorScheme": "Themer Dark"
+        "colorScheme": "purps"
       }
     }
-
+```
 ### Xcode
 
 Copy (or symlink) the generated theme file to Xcode's themes directory:
