@@ -140,9 +140,9 @@ In the kitty configuration file (usually `~/.config/kitty/kitty.conf`), `include
 
 ### Konsole
 
-Copy (or symlink) the generated files to `~/.local/share/konsole/`:
+Copy (or symlink) either the mono or insensity or both to `~/.local/share/konsole/`:
 
-    cp 'Konsole/purps.colorscheme' ~/.local/share/konsole/
+    cp 'Konsole/*.colorscheme' ~/.local/share/konsole/
 
 Then choose the desired theme in Konsole > Settings > Edit Current Profile > Appearance.
 
