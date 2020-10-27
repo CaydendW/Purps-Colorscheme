@@ -76,7 +76,8 @@ Generated files:
 * `CSS/hsl.css`
 
 ### Doom-emacs
-Add the `doom-purps-theme.el` to your custom theme load directory and in `~/.doom.d/config.el`, add `(require 'doom-themes)` and `(load-theme 'doom-purps t)`
+Add the `doom-purps-theme.el` to your custom theme load directory and in `~/.doom.d/config.el`, add `(setq doom-theme 'doom-purps)`
+To add a custom theme load directory add `(add-to-list 'custom-theme-load-path "path/to/where/you/want/your/themes/to/be/installed")` to your `~/.doom.d/init.el`. E.G: `(add-to-list 'custom-theme-load-path "~/.doom.d/themes")`
 
 ### Emacs
 
