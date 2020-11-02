@@ -113,6 +113,10 @@ The Firefox Color add-on allows for simple theming without the need for a develo
 
 For a more fully featured Firefox theme, see themer's Firefox theme add-on generator.
 
+### GTK
+To install the GTK theme copy the the outputted package directory to /usr/share/themes. (Will need root privliges)
+```sudo cp -r GTK/purps /usr/share/themes```
+
 ### Hyper
 
 First, copy (or symlink) the outputted package directory to the Hyper local plugins directory:
