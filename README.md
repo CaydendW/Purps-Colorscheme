@@ -162,6 +162,10 @@ Load the generated theme file into Sketch through the [sketch-palettes](https://
 1. Copy (or symlink) the generated theme files (`Sublime Text/themer-sublime-text-dark.tmTheme`) to the `User/` packages folder (you can see where this folder is located by choosing the "Browse Packages..." menu option in Sublime Text).
 2. Choose the theme from the list of available color themes.
 
+### rofi
+1. Copy (or symlink) the generated theme files (`rofi/purps.rasi`) to ~/.config/rofi
+2. Edit your rofi prompt command to contain: `-theme purps`
+
 ### Terminator
 
 Copy the contents of `Terminator/themer-terminator-dark.txt` to the Terminator's config file.
