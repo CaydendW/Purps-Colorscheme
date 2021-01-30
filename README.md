@@ -150,7 +150,16 @@ Copy (or symlink) either the mono or insensity or both to `~/.local/share/konsol
     cp 'Konsole/*.colorscheme' ~/.local/share/konsole/
 
 Then choose the desired theme in Konsole > Settings > Edit Current Profile > Appearance.
-
+### qutebrowser
+Copy (or symlink) qutebrowser/purps to ~/.config/qutebrowser and set the theme in config.py
+```
+cp -r qutebrowser/purps ~/.config/qutebrowser && echo 'import purps.draw' >> ~/.config/qutebrowser/config.py && echo 'purps.draw.blood(c, {
+    'spacing': {
+        'vertical': 6,
+        'horizontal': 8
+    }   
+})' >> ~/.config/qutebrowser/config.py
+```
 ### Sketch
 
 Load the generated theme file into Sketch through the [sketch-palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin.
